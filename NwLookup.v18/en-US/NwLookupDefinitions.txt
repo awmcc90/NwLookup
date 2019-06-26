@@ -1,0 +1,6 @@
+# Local names for ribbon tab, panel, and controls
+$utf8
+
+ID_NWLOOKUP_TAB.DisplayName=NwLookup
+
+NWLOOKUP_SNOOP_COMMAND.DisplayName=Snoop

@@ -1,0 +1,24 @@
+﻿<Window x:Class="NwLookup.Snoop.Views.TypesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NwLookup.Snoop.Views"
+        mc:Ignorable="d"
+        Title="TypesWindow" Height="450" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" />
+        <ListBox Grid.Row="1" ItemsSource="{Binding Types}" HorizontalContentAlignment="Stretch" 
+                 VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox >
+    </Grid>
+</Window>

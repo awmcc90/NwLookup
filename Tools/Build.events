@@ -1,0 +1,7 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<PostBuildEvent>rd /s /q "$(ProgramData)\Autodesk\ApplicationPlugins\NwLookup.bundle\Contents\$(TargetYear)\"
+xcopy "$(TargetDir)*.*" "$(ProgramData)\Autodesk\ApplicationPlugins\NwLookup.bundle\Contents\$(TargetYear)\" /Y /I /E /EXCLUDE:$(SolutionDir)exclude.txt
+copy "$(SolutionDir)PackageContents.xml" "$(ProgramData)\Autodesk\ApplicationPlugins\NwLookup.bundle\" /Y</PostBuildEvent>
+	</PropertyGroup>
+</Project>

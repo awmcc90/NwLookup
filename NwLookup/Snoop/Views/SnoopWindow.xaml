@@ -1,0 +1,74 @@
+﻿<Window x:Class="NwLookup.Snoop.Views.SnoopWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NwLookup.Snoop.Views"
+        xmlns:local_controls="clr-namespace:NwLookup.Snoop.Views.Controls"
+        mc:Ignorable="d"
+        Title="Snoop" Height="350" Width="500">
+    <Window.Resources>
+        <Style x:Key="alternateColor" TargetType="{x:Type ListViewItem}">
+            <Style.Triggers>
+                <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                    <Setter Property="Background" Value="White"/>
+                </Trigger>
+                <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                    <Setter Property="Background" Value="LightGray"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <GridSplitter Grid.Row="1" Grid.Column="1" Margin="1 0 1 0" Width="2" Background="Black" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="20" Margin="0 0 0 2">
+            <MenuItem Header="File" >
+                <MenuItem Header="Types" Click="Types_Click"/>
+                <Separator />
+                <MenuItem Header="Exit" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+        <ListBox Grid.Row="1" Grid.Column="0" ItemsSource="{Binding Objects}" SelectedItem="{Binding SelectedObject}" HorizontalContentAlignment="Stretch"
+                 VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox >
+        <ListView Grid.Row="1" Grid.Column="2" ItemsSource="{Binding Datas}" SelectedItem="{Binding SelectedData}" HorizontalContentAlignment="Stretch"
+                  AlternationCount="2" ItemContainerStyle="{StaticResource alternateColor}" >
+            <ListView.Resources>
+                <Style x:Key="ValueCellTextBlockStyle" TargetType="TextBlock">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding CanSnoop}" Value="True">
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+                <DataTemplate x:Key="LabelCellTemplate">
+                    <TextBlock Foreground="Black" Text="{Binding Path=Label}" />
+                </DataTemplate>
+                <DataTemplate x:Key="ValueCellTemplate">
+                    <TextBlock Foreground="Black" Text="{Binding Path=ValueString}" 
+                               Style="{StaticResource ValueCellTextBlockStyle}"/>
+                </DataTemplate>
+            </ListView.Resources>
+            <ListView.View>
+                <local_controls:AutoSizedGridView>
+                    <GridViewColumn Header="Label" Width="Auto" CellTemplate="{StaticResource LabelCellTemplate}"/>
+                    <GridViewColumn Header="Value" Width="Auto" CellTemplate="{StaticResource ValueCellTemplate}"/>
+                </local_controls:AutoSizedGridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

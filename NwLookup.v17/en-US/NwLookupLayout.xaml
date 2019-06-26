@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RibbonControl x:Uid="UID_NWLOOKUP_RIBBON_CONTROL" 
+    xmlns="clr-namespace:Autodesk.Windows;assembly=AdWindows" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:nvw="clr-namespace:Autodesk.Navisworks.Gui.Roamer.AIRLook;assembly=navisworks.gui.roamer">
+    <RibbonTab Id="ID_NWLOOKUP_TAB" Title="NwLookup">
+        <RibbonPanel x:Uid="UID_SNOOP_PANEL">
+            <RibbonPanelSource x:Uid="UID_NWLOOKUP_TAB_SNOOP_PANEL_SOURCE" Title="Snoop">
+                <nvw:NWRibbonButton x:Uid="UID_NWLOOKUP_TAB_SNOOP_PANEL_SNOOP_BUTTON" Id="NWLOOKUP_SNOOP_COMMAND"
+                                    Size="Large"
+                                    ShowText="True" 
+                                    Orientation = "Vertical"/>
+            </RibbonPanelSource>
+        </RibbonPanel>
+    </RibbonTab>
+</RibbonControl>

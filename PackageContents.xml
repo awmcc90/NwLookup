@@ -1,0 +1,10 @@
+﻿<ApplicationPackage SchemaVersion="1.0" Name="NwLookup" AppVersion="1.0.0.0" ProductType="Application" Author="AMCC" ProductCode="{B1782B9E-6BB4-47E4-81E5-003C37B2399B}">
+  <Components Description="Navisworks 2017 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw14" SeriesMax="Nw14" />
+    <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2017/NwLookup.v17.dll" />
+  </Components>
+  <Components Description="Navisworks 2018 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw15" SeriesMax="Nw15" />
+    <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2018/NwLookup.v18.dll" />
+  </Components>
+</ApplicationPackage>

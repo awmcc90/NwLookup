@@ -74,9 +74,6 @@
     <Compile Include="Snoop\Collectors\ModelItemStreamPass.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\NwLookup\NwLookup.csproj">
       <Project>{875544e5-cd02-4e38-8e32-3016edf47027}</Project>
       <Name>NwLookup</Name>

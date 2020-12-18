@@ -1,4 +1,5 @@
-﻿<ApplicationPackage SchemaVersion="1.0" Name="NwLookup" AppVersion="1.0.0.0" ProductType="Application" Author="AMCC" ProductCode="{B1782B9E-6BB4-47E4-81E5-003C37B2399B}">
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" Name="NwLookup" AppVersion="1.0.0.0" ProductType="Application" Author="AMCC" ProductCode="{F17611FD-BE87-4F06-B116-C83E23B867B1}">
   <Components Description="Navisworks 2017 parts">
     <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw14" SeriesMax="Nw14" />
     <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2017/NwLookup.v17.dll" />
@@ -8,7 +9,7 @@
     <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2018/NwLookup.v18.dll" />
   </Components>
   <Components Description="Navisworks 2021 parts">
-    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw18" SeriesMax="Nw18" />
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw18" SeriesMax="Nw18" />
     <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2021/NwLookup.v21.dll" />
   </Components>
 </ApplicationPackage>

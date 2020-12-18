@@ -33,21 +33,17 @@
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autodesk.Navisworks.Api, Version=12.0.1147.53, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\Autodesk.Navisworks.Api.dll</HintPath>
+    <Reference Include="Autodesk.Navisworks.Api">
+      <HintPath>C:\Program Files\Autodesk\Navisworks Manage 2021\Autodesk.Navisworks.Api.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Autodesk.Navisworks.ComApi, Version=12.0.1147.53, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\Autodesk.Navisworks.ComApi.dll</HintPath>
+    <Reference Include="Autodesk.Navisworks.ComApi">
+      <HintPath>C:\Program Files\Autodesk\Navisworks Manage 2021\Autodesk.Navisworks.ComApi.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Autodesk.Navisworks.Interop.ComApi, Version=12.0.1147.53, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>lib\Autodesk.Navisworks.Interop.ComApi.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Autodesk.Navisworks.Interop.ComApi">
+      <HintPath>C:\Program Files\Autodesk\Navisworks Manage 2021\Autodesk.Navisworks.Interop.ComApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />

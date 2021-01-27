@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="ProductName">Navisworks Lookup</String>
+
+  <String Id="Language">1033</String>
+
+  <String Id="Description">Navisworks Lookup Plugin</String>
+  <String Id="Keywords">Navisworks,Lookup,plugin,addin</String>
+  <String Id="Comments">Comments</String>
+
+  <String Id="DowngradeErrorMessage">A newer version of this plugin is already installed.</String>
+</WixLocalization>

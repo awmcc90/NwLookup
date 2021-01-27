@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <!--Variables-->
+  <?define Manufacturer = awmcc90?>
+
+  <?define UpgradeGUID = cbd2f6d9-841a-40ce-8c8d-8b9a79c9fbe5?>
+
+  <!--Product Information-->
+  <Product Id="c65e6793-a2f6-46e3-a965-055f10ef2802"
+			 Name="!(loc.ProductName)"
+			 Language="!(loc.Language)"
+			 Version="1.0.1"
+			 Manufacturer="$(var.Manufacturer)"
+			 UpgradeCode="$(var.UpgradeGUID)">
+
+    <!--Package Information-->
+    <Package InstallerVersion="200"
+				 Compressed="yes"
+				 InstallScope="perUser"
+				 Description="!(loc.Description)"
+				 Keywords="!(loc.Keywords)"
+				 Comments="!(loc.Comments)" />
+
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+    <MediaTemplate EmbedCab="yes" />
+
+    <!--Icon-->
+    <Icon Id="icon.ico" SourceFile="$(var.ProjectDir)\Assets\icon.ico" />
+
+    <!--General Properties-->
+    <Property Id="ARPPRODUCTICON">icon.ico</Property>
+    <Property Id="ARPURLINFOABOUT">https://github.com/awmcc90/NwLookup</Property>
+
+    <!--Create basic UI for the Installer-->
+    <UIRef Id="WixUI_FeatureTree" />
+    <WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Main.bmp" />
+    <WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp" />
+    <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\Licence.rtf" />
+
+    <!--Components Files etc.-->
+    <Feature Id="F_Lookup_Plugin_17" Title="Navisworks Manage 2017 " Level="1">
+      <ComponentGroupRef Id="CG_2017" />
+    </Feature>
+    <Feature Id="F_Lookup_Plugin_18" Title="Navisworks Manage 2018" Level="1">
+      <ComponentGroupRef Id="CG_2018" />
+    </Feature>
+    <Feature Id="F_Lookup_Plugin_19" Title="Navisworks Manage 2019" Level="1">
+      <ComponentGroupRef Id="CG_2019" />
+    </Feature>
+    <Feature Id="F_Lookup_Plugin_20" Title="Navisworks Manage 2020" Level="1">
+      <ComponentGroupRef Id="CG_2020" />
+    </Feature>
+    <Feature Id="F_Lookup_Plugin_21" Title="Navisworks Manage 2021" Level="1">
+      <ComponentGroupRef Id="CG_2021" />
+    </Feature>
+    <Feature Id="F_Lookup_xml" Absent="disallow" Display="hidden" Level="1">
+      <ComponentGroupRef Id="CG_xml" />
+    </Feature>
+  </Product>
+</Wix>

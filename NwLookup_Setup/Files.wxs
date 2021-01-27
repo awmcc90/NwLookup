@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="CG_xml">
+      <ComponentRef Id="CF_xml" />
+    </ComponentGroup>
+
+    <!--XML Manifest-->
+    <DirectoryRef Id="NwLookup" FileSource="..\">
+      <Component Id="CF_xml" Guid="9ebcc3b8-b89b-4cd8-bd31-ce7b1444be35">
+        <File Id="F_xml" Name="PackageContents.xml" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <!--2017-->
+    <ComponentGroup Id="CG_2017">
+      <ComponentRef Id="CF_Main17" />
+      <ComponentRef Id="CF_Resources17" />
+      <ComponentRef Id="CF_enUS17" />
+    </ComponentGroup>
+    <DirectoryRef Id="D_2017" FileSource="..\NwLookup.v17\bin\x64\Release\">
+      <Component Id="CF_Main17" Guid="a9b7fc81-6d61-4ca0-9847-7562a5b78c9a" KeyPath="yes">
+        <File Id="F_NwLookup17" Name="NwLookup.dll" />
+        <File Id="F_NwLookup_v17" Name="NwLookup.v17.dll" />
+        <File Id="F_System.ValueTuple17" Name="System.ValueTuple.dll" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2017_Resources" FileSource="..\NwLookup.v17\bin\x64\Release\resources\">
+      <Component Id="CF_Resources17" Guid="7ba9bf70-0412-4e13-821f-5854e6a83994" KeyPath="yes">
+        <File Id="F_mg_16x16_17" Name="mg_16x16.ico" />
+        <File Id="F_mg_32x32_17" Name="mg_32x32.ico" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2017_enUS" FileSource="..\NwLookup.v17\bin\x64\Release\en-US\">
+      <Component Id="CF_enUS17" Guid="23f791f3-2bd3-41b4-83a2-c36475c5c7bb" KeyPath="yes">
+        <File Id="F_NwLookupDefinitions17" Name="NwLookupDefinitions.txt" />
+        <File Id="F_NwLookupLayout17" Name="NwLookupLayout.xaml" />
+      </Component>
+    </DirectoryRef>
+
+    <!--2018-->
+    <ComponentGroup Id="CG_2018">
+      <ComponentRef Id="CF_Main18" />
+      <ComponentRef Id="CF_Resources18" />
+      <ComponentRef Id="CF_enUS18" />
+    </ComponentGroup>
+    <DirectoryRef Id="D_2018" FileSource="..\NwLookup.v18\bin\x64\Release\">
+      <Component Id="CF_Main18" Guid="556fab2c-464d-4824-b19c-1ff7216c746a" KeyPath="yes">
+        <File Id="F_NwLookup18" Name="NwLookup.dll" />
+        <File Id="F_NwLookup_v18" Name="NwLookup.v18.dll" />
+        <File Id="F_System.ValueTuple18" Name="System.ValueTuple.dll" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2018_Resources" FileSource="..\NwLookup.v18\bin\x64\Release\resources\">
+      <Component Id="CF_Resources18" Guid="16197d0b-0539-4403-996c-f7f7e330ce99" KeyPath="yes">
+        <File Id="F_mg_16x16_18" Name="mg_16x16.ico" />
+        <File Id="F_mg_32x32_18" Name="mg_32x32.ico" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2018_enUS" FileSource="..\NwLookup.v18\bin\x64\Release\en-US\">
+      <Component Id="CF_enUS18" Guid="53f9fea6-2cae-49c8-a9c0-96734433e5ae" KeyPath="yes">
+        <File Id="F_NwLookupDefinitions18" Name="NwLookupDefinitions.txt" />
+        <File Id="F_NwLookupLayout18" Name="NwLookupLayout.xaml" />
+      </Component>
+    </DirectoryRef>
+
+    <!--2019-->
+    <ComponentGroup Id="CG_2019">
+      <ComponentRef Id="CF_Main19" />
+      <ComponentRef Id="CF_Resources19" />
+      <ComponentRef Id="CF_enUS19" />
+    </ComponentGroup>
+    <DirectoryRef Id="D_2019" FileSource="..\NwLookup.v19\bin\x64\Release\">
+      <Component Id="CF_Main19" Guid="abbbffeb-87f1-4805-aab6-5e42ba8e2d45" KeyPath="yes">
+        <File Id="F_NwLookup19" Name="NwLookup.dll" />
+        <File Id="F_NwLookup_v19" Name="NwLookup.v19.dll" />
+        <File Id="F_System.ValueTuple19" Name="System.ValueTuple.dll" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2019_Resources" FileSource="..\NwLookup.v19\bin\x64\Release\resources\">
+      <Component Id="CF_Resources19" Guid="a1436895-47c7-4019-87e3-7768b20b54c2" KeyPath="yes">
+        <File Id="F_mg_16x16_19" Name="mg_16x16.ico" />
+        <File Id="F_mg_32x32_19" Name="mg_32x32.ico" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2019_enUS" FileSource="..\NwLookup.v19\bin\x64\Release\en-US\">
+      <Component Id="CF_enUS19" Guid="a3cf946d-d0f4-412b-beab-85f765c9faff" KeyPath="yes">
+        <File Id="F_NwLookupDefinitions19" Name="NwLookupDefinitions.txt" />
+        <File Id="F_NwLookupLayout19" Name="NwLookupLayout.xaml" />
+      </Component>
+    </DirectoryRef>
+
+    <!--2020-->
+    <ComponentGroup Id="CG_2020">
+      <ComponentRef Id="CF_Main20" />
+      <ComponentRef Id="CF_Resources20" />
+      <ComponentRef Id="CF_enUS20" />
+    </ComponentGroup>
+    <DirectoryRef Id="D_2020" FileSource="..\NwLookup.v20\bin\x64\Release\">
+      <Component Id="CF_Main20" Guid="dab55ce2-eec8-4a30-ae84-8a141e534f12" KeyPath="yes">
+        <File Id="F_NwLookup20" Name="NwLookup.dll" />
+        <File Id="F_NwLookup_v20" Name="NwLookup.v20.dll" />
+        <File Id="F_System.ValueTuple20" Name="System.ValueTuple.dll" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2020_Resources" FileSource="..\NwLookup.v20\bin\x64\Release\resources\">
+      <Component Id="CF_Resources20" Guid="5b26ccef-ebef-42fe-8cf4-0e37ec439576" KeyPath="yes">
+        <File Id="F_mg_16x16_20" Name="mg_16x16.ico" />
+        <File Id="F_mg_32x32_20" Name="mg_32x32.ico" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2020_enUS" FileSource="..\NwLookup.v20\bin\x64\Release\en-US\">
+      <Component Id="CF_enUS20" Guid="e878c5dc-d922-48d0-9205-b2b4b593c4c3" KeyPath="yes">
+        <File Id="F_NwLookupDefinitions20" Name="NwLookupDefinitions.txt" />
+        <File Id="F_NwLookupLayout20" Name="NwLookupLayout.xaml" />
+      </Component>
+    </DirectoryRef>
+
+    <!--2021-->
+    <ComponentGroup Id="CG_2021">
+      <ComponentRef Id="CF_Main21" />
+      <ComponentRef Id="CF_Resources21" />
+      <ComponentRef Id="CF_enUS21" />
+    </ComponentGroup>
+    <DirectoryRef Id="D_2021" FileSource="..\NwLookup.v21\bin\x64\Release\">
+      <Component Id="CF_Main21" Guid="7420ac57-9be8-4b02-98f3-0963c4430976" KeyPath="yes">
+        <File Id="F_NwLookup21" Name="NwLookup.dll" />
+        <File Id="F_NwLookup_v21" Name="NwLookup.v21.dll" />
+        <File Id="F_System.ValueTuple21" Name="System.ValueTuple.dll" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2021_Resources" FileSource="..\NwLookup.v21\bin\x64\Release\resources\">
+      <Component Id="CF_Resources21" Guid="4c7a55dc-cd09-4bb8-b5f5-7131cebe06c1" KeyPath="yes">
+        <File Id="F_mg_16x16_21" Name="mg_16x16.ico" />
+        <File Id="F_mg_32x32_21" Name="mg_32x32.ico" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2021_enUS" FileSource="..\NwLookup.v21\bin\x64\Release\en-US\">
+      <Component Id="CF_enUS21" Guid="996cb107-b8bd-4db2-9167-def0ed9508bf" KeyPath="yes">
+        <File Id="F_NwLookupDefinitions21" Name="NwLookupDefinitions.txt" />
+        <File Id="F_NwLookupLayout21" Name="NwLookupLayout.xaml" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>

@@ -1,12 +1,10 @@
-﻿using System;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 
 using NwLookup.Snoop.Datas;
 using NwLookup.Snoop.Collectors;
 using NwLookup.Snoop.Views.Models;
-
 
 namespace NwLookup.Snoop.Views
 {

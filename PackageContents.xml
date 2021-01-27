@@ -8,6 +8,14 @@
     <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw15" SeriesMax="Nw15" />
     <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2018/NwLookup.v18.dll" />
   </Components>
+  <Components Description="Navisworks 2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw16" SeriesMax="Nw16" />
+    <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2019/NwLookup.v19.dll" />
+  </Components>
+  <Components Description="Navisworks 2020 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw17" SeriesMax="Nw17" />
+    <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2020/NwLookup.v20.dll" />
+  </Components>
   <Components Description="Navisworks 2021 parts">
     <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw18" SeriesMax="Nw18" />
     <ComponentEntry AppName="NwLookup" AppType="ManagedPlugin" ModuleName="./Contents/2021/NwLookup.v21.dll" />

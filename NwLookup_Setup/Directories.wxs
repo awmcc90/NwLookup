@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="CommonAppDataFolder">
+        <Directory Id="AUTODESK" Name="Autodesk">
+          <Directory Id="ApplicationPlugins" Name="ApplicationPlugins">
+            <Directory Id="NwLookup" Name="NwLookup.bundle">
+              <Directory Id="Contents" Name="Contents">
+                <Directory Id="D_2017" Name="2017">
+                  <Directory Id="D_2017_Resources" Name="resources" />
+                  <Directory Id="D_2017_enUS" Name="en-US" />
+                </Directory>
+                <Directory Id="D_2018" Name="2018">
+                  <Directory Id="D_2018_Resources" Name="resources" />
+                  <Directory Id="D_2018_enUS" Name="en-US" />
+                </Directory>
+                <Directory Id="D_2019" Name="2019">
+                  <Directory Id="D_2019_Resources" Name="resources" />
+                  <Directory Id="D_2019_enUS" Name="en-US" />
+                </Directory>
+                <Directory Id="D_2020" Name="2020">
+                  <Directory Id="D_2020_Resources" Name="resources" />
+                  <Directory Id="D_2020_enUS" Name="en-US" />
+                </Directory>
+                <Directory Id="D_2021" Name="2021">
+                  <Directory Id="D_2021_Resources" Name="resources" />
+                  <Directory Id="D_2021_enUS" Name="en-US" />
+                </Directory>
+              </Directory>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+</Wix>

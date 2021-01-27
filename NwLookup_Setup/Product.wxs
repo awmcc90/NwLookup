@@ -7,10 +7,10 @@
   <?define UpgradeGUID = cbd2f6d9-841a-40ce-8c8d-8b9a79c9fbe5?>
 
   <!--Product Information-->
-  <Product Id="bafb6030-8427-4f17-9e6e-d4eed2e05016"
+  <Product Id="4f37d1ca-4cbe-4682-9dad-571368282e9f"
 			 Name="!(loc.ProductName)"
 			 Language="!(loc.Language)"
-			 Version="1.0.2"
+			 Version="1.0.3"
 			 Manufacturer="$(var.Manufacturer)"
 			 UpgradeCode="$(var.UpgradeGUID)">
 

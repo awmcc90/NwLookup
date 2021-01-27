@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>0cea8009-a942-43b4-8e1d-22610289f902</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>RevitSetupProject</OutputName>
+    <OutputName>NwLookup</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwLookup.v18", "NwLookup.v18\NwLookup.v18.csproj", "{B0C56007-B6E4-4A89-8E61-D37D2AFE8BE0}"
 EndProject
@@ -15,6 +15,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwLookup.v17", "NwLookup.v17\NwLookup.v17.csproj", "{5D2D6A6B-3BEF-40E9-B151-09B346800648}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwLookup.v21", "NwLookup.v21\NwLookup.v21.csproj", "{944F3E88-538E-4797-B8D5-42204F60042A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwLookup.v19", "NwLookup.v19\NwLookup.v19.csproj", "{1EB9F9F4-C4FE-455F-BA41-950901E38D08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwLookup.v20", "NwLookup.v20\NwLookup.v20.csproj", "{D3DB9547-E3D2-443F-84F9-798E3C92FC7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,14 @@ Global
 		{944F3E88-538E-4797-B8D5-42204F60042A}.Debug|x64.Build.0 = Debug|x64
 		{944F3E88-538E-4797-B8D5-42204F60042A}.Release|x64.ActiveCfg = Release|x64
 		{944F3E88-538E-4797-B8D5-42204F60042A}.Release|x64.Build.0 = Release|x64
+		{1EB9F9F4-C4FE-455F-BA41-950901E38D08}.Debug|x64.ActiveCfg = Debug|x64
+		{1EB9F9F4-C4FE-455F-BA41-950901E38D08}.Debug|x64.Build.0 = Debug|x64
+		{1EB9F9F4-C4FE-455F-BA41-950901E38D08}.Release|x64.ActiveCfg = Release|x64
+		{1EB9F9F4-C4FE-455F-BA41-950901E38D08}.Release|x64.Build.0 = Release|x64
+		{D3DB9547-E3D2-443F-84F9-798E3C92FC7F}.Debug|x64.ActiveCfg = Debug|x64
+		{D3DB9547-E3D2-443F-84F9-798E3C92FC7F}.Debug|x64.Build.0 = Debug|x64
+		{D3DB9547-E3D2-443F-84F9-798E3C92FC7F}.Release|x64.ActiveCfg = Release|x64
+		{D3DB9547-E3D2-443F-84F9-798E3C92FC7F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

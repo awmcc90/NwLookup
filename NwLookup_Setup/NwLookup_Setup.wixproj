@@ -73,6 +73,14 @@
       <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
       <RefTargetDir>INSTALLFOLDER</RefTargetDir>
     </ProjectReference>
+    <ProjectReference Include="..\NwLookup.v22\NwLookup.v22.csproj">
+      <Name>NwLookup.v22</Name>
+      <Project>{e514f1ff-f68c-4996-a55d-90c297c5a999}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
     <ProjectReference Include="..\NwLookup\NwLookup.csproj">
       <Name>NwLookup</Name>
       <Project>{875544e5-cd02-4e38-8e32-3016edf47027}</Project>

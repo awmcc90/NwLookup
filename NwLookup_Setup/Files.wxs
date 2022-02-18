@@ -141,5 +141,30 @@
         <File Id="F_NwLookupLayout21" Name="NwLookupLayout.xaml" />
       </Component>
     </DirectoryRef>
+    <!--2022-->
+    <ComponentGroup Id="CG_2022">
+      <ComponentRef Id="CF_Main22" />
+      <ComponentRef Id="CF_Resources22" />
+      <ComponentRef Id="CF_enUS22" />
+    </ComponentGroup>
+    <DirectoryRef Id="D_2022" FileSource="..\NwLookup.v22\bin\x64\Release\">
+      <Component Id="CF_Main22" Guid="105E3C57-D2A8-441D-B175-3D03DB76176C" KeyPath="yes">
+        <File Id="F_NwLookup22" Name="NwLookup.dll" />
+        <File Id="F_NwLookup_v22" Name="NwLookup.v22.dll" />
+        <File Id="F_System.ValueTuple22" Name="System.ValueTuple.dll" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2022_Resources" FileSource="..\NwLookup.v22\bin\x64\Release\resources\">
+      <Component Id="CF_Resources22" Guid="842FAA3E-5404-406E-9894-B18949513758" KeyPath="yes">
+        <File Id="F_mg_16x16_22" Name="mg_16x16.ico" />
+        <File Id="F_mg_32x32_22" Name="mg_32x32.ico" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="D_2022_enUS" FileSource="..\NwLookup.v22\bin\x64\Release\en-US\">
+      <Component Id="CF_enUS22" Guid="AF42C1C1-044A-421A-A39F-4A6115B6572E" KeyPath="yes">
+        <File Id="F_NwLookupDefinitions22" Name="NwLookupDefinitions.txt" />
+        <File Id="F_NwLookupLayout22" Name="NwLookupLayout.xaml" />
+      </Component>
+    </DirectoryRef>
   </Fragment>
 </Wix>

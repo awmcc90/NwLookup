@@ -54,6 +54,9 @@
     <Feature Id="F_Lookup_Plugin_21" Title="Navisworks Manage 2021" Level="1">
       <ComponentGroupRef Id="CG_2021" />
     </Feature>
+    <Feature Id="F_Lookup_Plugin_22" Title="Navisworks Manage 2022" Level="1">
+      <ComponentGroupRef Id="CG_2022" />
+    </Feature>
     <Feature Id="F_Lookup_xml" Absent="disallow" Display="hidden" Level="1">
       <ComponentGroupRef Id="CG_xml" />
     </Feature>

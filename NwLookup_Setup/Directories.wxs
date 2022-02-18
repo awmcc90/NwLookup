@@ -27,6 +27,10 @@
                   <Directory Id="D_2021_Resources" Name="resources" />
                   <Directory Id="D_2021_enUS" Name="en-US" />
                 </Directory>
+                <Directory Id="D_2022" Name="2022">
+                  <Directory Id="D_2022_Resources" Name="resources" />
+                  <Directory Id="D_2022_enUS" Name="en-US" />
+                </Directory>
               </Directory>
             </Directory>
           </Directory>
